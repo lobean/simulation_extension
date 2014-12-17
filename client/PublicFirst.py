@@ -10,6 +10,8 @@ from multiprocessing import Process
 ###logging###
 #host_ip,request(create_time, response_time, integer)
 
+du =
+dn =
 
 def requestSenderPublicFirst():
 
@@ -45,10 +47,15 @@ def requestSenderPublicFirst():
 
             print "send over"
 
-def schedule(pro):
-    ex =
-    varx =
-    dt = ex + varx
+def schedule(pro,ex,dx):
+
+    dt = ex + ex*pro*(1 + dx/(ex*ex))/2*(1-pro)
+    if dt < dn:
+        return -1
+    elif dt > du:
+        return 1
+    else:
+        return 0
 
 
 if __name__ == "__main__":

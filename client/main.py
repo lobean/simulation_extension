@@ -33,7 +33,7 @@ def func(k):
         881.558114828892,
         1.54185463475702
     ]
-    t = 24 * float(k) / 24000  #k~(1,24000)
+    t = 24 * float(k) / 2400  #k~(1,2400)
     num = x[0]+x[1]*t+x[2]*pow(t,2)+x[3]*pow(t,3) + x[4] * math.exp(t*x[5]) + x[6] * math.exp(-t*x[7]) + 10
     return num
 
